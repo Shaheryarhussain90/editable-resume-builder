@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Editable Resume Builder</h1>
+    <form id="resume-form">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="Name">User Name:</label><br><br>
+            <input type="text" id="Name" placeholder="Enter your Name" required><br><br>
+            <label for="Email">Email:</label>
+            <input for="email" id="Email" placeholder="Email" required><br><br>
+            <label for="cnic">#CNIC NO:</label>
+            <input type="text" id="cnic" placeholder="cnic no" required><br><br>
+            <label for="Phone">Phone No:</label>
+            <input type="text" id="Phone" placeholder="Phone No" required><br><br>
+            <label for="Religion">Religion:</label>
+            <input type="text" id="Religion" placeholder="Religion" required>
+            
+        </fieldset>
+
+        <fieldset>
+            <legend>Education</legend>
+            <label for="education">Education:</label><br><br>
+            <textarea id="education" placeholder="Enter your education" rows="4" required></textarea><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Experience</legend><br><br>
+            <label for="Experience">Experience:</label><br><br>
+            <textarea id="Experience" placeholder="Enter your work experience" rows="4" required></textarea><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Skills</legend><br>
+            <label for="Skill">Skills:</label><br><br>
+            <textarea id="Skill" placeholder="Enter your skills" rows="4" required></textarea><br><br>
+        </fieldset>
+
+        <button type="submit"><strong>Generate Resume Below</strong></button>
+    </form>
+    <br><br><br>
+
+    <!-- Dynamic& editable resume -->
+    <div id="resumeOutput" contenteditable="true"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>
